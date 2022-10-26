@@ -34,9 +34,9 @@ function App() {
       {result && result.map((e)=>{
         return(<>
        <div class="col-md-4">
-          <h4 class="col-lg-6">{e.headline}</h4>
+        {e.headline}
           
-          {e.primaryText}
+          {e.primaryText}<br/>
           <img  src={e.imageUrl} ></img>
           {console.log(e.imageUrl)}
           <h2>{e.CTA}</h2>
